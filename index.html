@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffe Shop</title>
+    <link rel="icon" type="image/png" href="./img/iconCoffe.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-section">
+            <div class="navbar-features">
+                <div style="display: flex; align-items: center">
+                    <img src="./img/logoCoffe.png" alt="logoCoffe" style="width: 8%; display: flex" />
+                    <h1 style="
+                font-size: xx-large;
+                font-weight: bold;
+                margin-left: 25px;
+                color: dimgray;
+              ">
+                        Coffee Kohi
+                    </h1>
+                </div>
+
+                <ul class="navbar-items">
+                    <li><a href="#home" class="navbar-text">Home</a></li>
+                    <li><a href="#menu" class="navbar-text">Menu</a></li>
+                    <li><a href="#about" class="navbar-text">About</a></li>
+                    <li><a href="#contact" class="navbar-text">Contact</a></li>
+                    <button onclick="document.location='https://en.wikipedia.org/wiki/Order'" class="order" style="
+                        margin-left: 50px;
+                        padding: 20px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        background-color: #424b54;
+                        border: none;
+                        border-radius: 30px;
+                        overflow: hidden;
+                        ">
+                        <span style="font-size: x-large; font-weight: bolder; color: aliceblue">Order</span>
+                    </button>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="home-section-page" id="home">
+            <img class="home-section-image" src="./img/bgCoffe1.jpg" alt="bgCoffe" style="width: 100%; opacity: 0.8;" />
+            <div class="home-section-field">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    style="width: 100px; color: gray; opacity: 0.4;">
+                    <path
+                        d="M6 2.5C5.44772 2.5 5 2.94772 5 3.5V5.5C5 6.05228 5.44772 6.5 6 6.5C6.55228 6.5 7 6.05228 7 5.5V3.5C7 2.94772 6.55228 2.5 6 2.5Z"
+                        fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13 21.5C15.973 21.5 18.441 19.3377 18.917 16.5H19C21.2091 16.5 23 14.7091 23 12.5C23 10.2909 21.2091 8.5 19 8.5V7.5H1V15.5C1 18.8137 3.68629 21.5 7 21.5H13ZM3 9.5V15.5C3 17.7091 4.79086 19.5 7 19.5H13C15.2091 19.5 17 17.7091 17 15.5V9.5H3ZM21 12.5C21 13.6046 20.1046 14.5 19 14.5V10.5C20.1046 10.5 21 11.3954 21 12.5Z"
+                        fill="currentColor" />
+                    <path
+                        d="M9 3.5C9 2.94772 9.44771 2.5 10 2.5C10.5523 2.5 11 2.94772 11 3.5V5.5C11 6.05228 10.5523 6.5 10 6.5C9.44771 6.5 9 6.05228 9 5.5V3.5Z"
+                        fill="currentColor" />
+                    <path
+                        d="M14 2.5C13.4477 2.5 13 2.94772 13 3.5V5.5C13 6.05228 13.4477 6.5 14 6.5C14.5523 6.5 15 6.05228 15 5.5V3.5C15 2.94772 14.5523 2.5 14 2.5Z"
+                        fill="currentColor" />
+                </svg>
+                <h1 style="font-size: 3rem">OUR COFFEE</h1>
+                <h1 style="font-size: x-large; margin-top: 1rem">
+                    THE BEST OF SPECIALTY COFFEE FROM INDONESIA
+                </h1>
+                <h1 style="
+              font-size: x-large;
+              margin-top: 20rem;
+              text-align: center;
+              color: darkgray;
+            ">
+                    VARIAN ORIGINAL TERBAIK INDONESIA
+                </h1>
+                <p style="text-align: center; opacity: 0.8; color: darkgray">
+                    Java Mocha, Mount Arjuno Florest, Toraja Kolasi, Java Malabar,
+                    Sumatra Gayo, Bali Kintami
+                </p>
+            </div>
+        </div>
+        <div style="padding: 3rem; padding-bottom: 5rem;" id="menu">
+            <p style="
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            color: #c16e70;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+          ">
+                FROM THE BEST INDONESIAN SPECIALTY COFFEE TO HEART-WARMING FOODS
+            </p>
+            <h1 style="
+            color: rgb(173, 168, 168);
+            text-align: center;
+            font-weight: bold;
+          ">
+                OUR MENU
+            </h1>
+            <div style="margin-top: 1rem; margin-bottom: 3rem;">
+                <hr color="#C16E70" style="width: 100px; height: 5px; margin: auto" />
+            </div>
+            <table class="menu">
+                <tr>
+                    <td align="center"">
+                    <img src=" ./img/coffe-beans.jpg" alt="beans" style="width: 100%" />
+                    </td>
+                    <td align="center">
+                        <img src="./img/coffe-1.jpg" alt="coffe" style="width: 100%" />
+                    </td>
+                    <td align="center">
+                        <img src="./img/non-coffee.jpg" alt="drinks" style="width: 100%" />
+                    </td>
+                    <td align="center">
+                        <img src="./img/food.jpg" alt="food" style="width: 100%" />
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <h2 style="text-align: center; font-size: larger;">Our Beans</h2>
+                    </th>
+                    <th>
+                        <h2 style="text-align: center; font-size: larger;">Coffe Based Drinks</h2>
+                    </th>
+                    <th>
+                        <h2 style="text-align: center; font-size: larger;">Non-Coffee</h2>
+                    </th>
+                    <th>
+                        <h2 style="text-align: center; font-size: larger;">Food & Snack</h2>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="menu">Biji kopi grade Specialty Arabica dan Fine Robusta dari 6 perkebunan terbaik
+                            Indonesia.</p>
+                    </td>
+                    <td>
+                        <p class="menu">Dari minuman tradisional berbasis espresso sampai
+                            berbagai minuman racikan kopi terkini.</p>
+                    </td>
+                    <td>
+                        <p class="menu">Kami juga memiliki menu non-coffee untuk kamu yang
+                            ingin pilihan lain selain kopi dan untuk anak - anak.</p>
+                    </td>
+                    <td>
+                        <p class="menu">Berbagai macam makanan ringan sampai makanan utama
+                            siap menemani secangkir kopimu.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="about" style="color: rgb(245, 244, 244); padding-top: 5rem; padding-bottom: 5rem;" id="about">
+            <div style="flex: 50%; padding-right: 7rem;">
+                <h1>CERITA KAMI</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue
+                    lobortis, varius lorem ac,
+                    fermentum purus. Nullam vitae finibus metus. Suspendisse id dui in nulla laoreet facilisis.
+                    Phasellus
+                    dui lorem, placerat ut nulla ut, pellentesque elementum sapien. Phasellus lacinia sodales ante.
+                    <br><br>
+                    Mauris
+                    nibh erat, imperdiet at odio in, viverra gravida orci. Vivamus ut posuere ligula. Praesent sed leo
+                    purus. Curabitur lobortis tincidunt vulputate. Sed posuere eget velit ut malesuada. Morbi in velit
+                    sit
+                    amet justo tristique aliquet in eget metus. Proin varius magna ut pulvinar egestas. Quisque aliquet,
+                    odio quis tempus consequat, nibh ante blandit lacus, eu blandit neque elit pretium ligula.
+                </p>
+            </div>
+            <div style="flex: 50%;">
+                <img src="./img/coffeShop.png" alt="shop" style="height: 100%; padding-left: 3rem;">
+            </div>
+        </div>
+        <div class="contact" style="padding: auto; background-color: #C16E70; padding-top: 2rem; padding-bottom: 2rem;"
+            id="contact">
+            <p style="text-align: center; font-size: small; color: white;">GET UP CLOSE AND PERSONAL</p>
+            <h1 style="text-align: center; margin-bottom: 1rem; color: white; font-weight: bold; font-size: 3rem;">
+                CONTACT US</h1>
+            <hr color="white" style="width: 100px; height: 10px; margin: auto" />
+        </div>
+        <div style="text-align: center;">
+            <div style="display: flex; justify-content: center; padding-top: 4rem; padding-bottom: 3rem;">
+                <a href="https://www.instagram.com/gustinoprianto/" target="_blank">
+                    <div style="padding-left: 3rem; padding-right: 3rem; border-right: 1px solid #c16e70;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 60px;">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+                                fill="#c16e70" />
+                            <path
+                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                                fill="#c16e70" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                                fill="#c16e70" />
+                        </svg>
+                        <h1 style="font-size: medium; margin-top: 1rem; color: grey; font-weight: 300;">INSTAGRAM</h1>
+                        <h1 style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">@coffee_kohi
+                        </h1>
+                    </div>
+                </a>
+                <a href="mailto:mtgpmn2013@gmail.com">
+                    <div style="padding-left: 2rem; padding-right: 2rem;">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 60px;">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M3.05002 10.0151C2.79178 9.30708 2.94668 8.48233 3.51474 7.91427L9.8787 1.55031C11.0503 0.378738 12.9498 0.378738 14.1213 1.55031L20.4853 7.91427C21.0534 8.48239 21.2083 9.30727 20.9499 10.0154C20.9824 10.1139 20.9999 10.2191 20.9999 10.3285V21.3285C20.9999 22.4331 20.1045 23.3285 18.9999 23.3285H4.99994C3.89537 23.3285 2.99994 22.4331 2.99994 21.3285V10.3285C2.99994 10.219 3.01752 10.1137 3.05002 10.0151ZM4.92896 9.32848L11.2929 2.96452C11.6834 2.574 12.3166 2.574 12.7071 2.96452L19.0711 9.32848H19.0408V9.3588L12.7071 15.6924C12.3166 16.083 11.6834 16.083 11.2929 15.6924L4.92896 9.32848ZM18.9999 12.2281L14.1213 17.1067C12.9498 18.2782 11.0503 18.2782 9.8787 17.1067L4.99994 12.2279L4.99994 21.3285H18.9999V12.2281Z"
+                                fill="#c16e70" />
+                        </svg>
+                        <h1 style="font-size: medium; margin-top: 1rem; color: grey; font-weight: 300;">EMAIL</h1>
+                        <h1 style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">
+                            @coffee_kohi@gmail.com</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

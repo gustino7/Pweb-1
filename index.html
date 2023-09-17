@@ -14,44 +14,47 @@
         <div class="navbar-section">
             <div class="navbar-features">
                 <div style="display: flex; align-items: center">
-                    <img src="./img/logoCoffe.png" alt="logoCoffe" style="width: 8%; display: flex" />
+                    <img src="./img/logoCoffe.png" alt="logoCoffe"
+                        style="width: 8%; display: flex; animation: shake 1s; animation-iteration-count: infinite;" />
                     <h1 style="
-                font-size: xx-large;
-                font-weight: bold;
-                margin-left: 25px;
-                color: dimgray;
-              ">
+                        font-size: xx-large;
+                        font-weight: bold;
+                        margin-left: 25px;
+                        color: dimgray;
+                    ">
                         Coffee Kohi
                     </h1>
                 </div>
 
-                <ul class="navbar-items">
+                <ul class="navbar-items" style="margin-top: 3px;">
                     <li><a href="#home" class="navbar-text">Home</a></li>
                     <li><a href="#menu" class="navbar-text">Menu</a></li>
                     <li><a href="#about" class="navbar-text">About</a></li>
                     <li><a href="#contact" class="navbar-text">Contact</a></li>
-                    <button onclick="document.location='https://en.wikipedia.org/wiki/Order'" class="order" style="
-                        margin-left: 50px;
-                        padding: 20px;
-                        padding-left: 30px;
-                        padding-right: 30px;
-                        background-color: #424b54;
-                        border: none;
-                        border-radius: 30px;
-                        overflow: hidden;
-                        ">
-                        <span style="font-size: x-large; font-weight: bolder; color: aliceblue">Order</span>
-                    </button>
-                </ul>
 
+                </ul>
+                <button onclick="document.location='https://en.wikipedia.org/wiki/Order'" style="
+                margin-top: 5px;
+                padding: 5px 30px;
+                background-color: #424b54;
+                border: none;
+                border-radius: 30px;
+                font-size: x-large; 
+                font-weight: bolder; 
+                color: #fff;
+                cursor: pointer;
+                ">
+                    Order
+                </button>
             </div>
         </div>
     </nav>
 
     <main>
         <div class="home-section-page" id="home">
-            <img class="home-section-image" src="./img/bgCoffe1.jpg" alt="bgCoffe" style="width: 100%; opacity: 0.8;" />
-            <div class="home-section-field">
+            <img class="home-section-image" src="./img/bgCoffe1.jpg" alt="bgCoffe"
+                style="width: 100%; animation-duration: 4s; animation-name: appear;" />
+            <div class="home-section-field" style="animation-duration: 2s; animation-name: slidein;">
                 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                     style="width: 100px; color: gray; opacity: 0.4;">
                     <path
@@ -67,25 +70,29 @@
                         d="M14 2.5C13.4477 2.5 13 2.94772 13 3.5V5.5C13 6.05228 13.4477 6.5 14 6.5C14.5523 6.5 15 6.05228 15 5.5V3.5C15 2.94772 14.5523 2.5 14 2.5Z"
                         fill="currentColor" />
                 </svg>
-                <h1 style="font-size: 3rem">OUR COFFEE</h1>
-                <h1 style="font-size: x-large; margin-top: 1rem">
-                    THE BEST OF SPECIALTY COFFEE FROM INDONESIA
-                </h1>
-                <h1 style="
-              font-size: x-large;
-              margin-top: 20rem;
-              text-align: center;
-              color: darkgray;
-            ">
-                    VARIAN ORIGINAL TERBAIK INDONESIA
-                </h1>
-                <p style="text-align: center; opacity: 0.8; color: darkgray">
-                    Java Mocha, Mount Arjuno Florest, Toraja Kolasi, Java Malabar,
-                    Sumatra Gayo, Bali Kintami
-                </p>
+                <div style="animation-duration: 2s; animation-name: slidein;">
+                    <h1 style="font-size: 3rem;">OUR COFFEE</h1>
+                    <h1
+                        style="font-size: x-large; margin-top: 1rem; animation-duration: 2.5s; animation-name: slidein;">
+                        THE BEST OF SPECIALTY COFFEE FROM INDONESIA
+                    </h1>
+                    <h1 style="
+                    font-size: x-large;
+                    margin-top: 30rem;
+                    text-align: center;
+                    color: darkgray;
+                    ">
+                        VARIAN ORIGINAL TERBAIK INDONESIA
+                    </h1>
+                    <p style="text-align: center; opacity: 0.8; color: darkgray">
+                        Java Mocha, Mount Arjuno Florest, Toraja Kolasi, Java Malabar,
+                        Sumatra Gayo, Bali Kintami
+                    </p>
+                </div>
             </div>
         </div>
-        <div style="padding: 3rem; padding-bottom: 5rem;" id="menu">
+        <!-- div menu -->
+        <div style="padding: 3rem; padding-bottom: 5rem; " id="menu">
             <p style="
             padding-top: 4rem;
             padding-bottom: 4rem;
@@ -173,10 +180,12 @@
                 </p>
             </div>
             <div style="flex: 50%;">
-                <img src="./img/coffeShop.png" alt="shop" style="height: 100%; padding-left: 3rem;">
+                <img src="./img/coffeShop.png" alt="shop"
+                    style="height: 100%; padding-left: 3rem; filter: drop-shadow(0 1rem 1rem rgb(44, 44, 44));">
             </div>
         </div>
-        <div class="contact" style="padding: auto; background-color: #C16E70; padding-top: 2rem; padding-bottom: 2rem;"
+        <div class="contact"
+            style="padding: auto; background-color: #C16E70; background: linear-gradient(to top, #a95c5d, #cfa6a7); padding-top: 2rem; padding-bottom: 2rem;"
             id="contact">
             <p style="text-align: center; font-size: small; color: white;">GET UP CLOSE AND PERSONAL</p>
             <h1 style="text-align: center; margin-bottom: 1rem; color: white; font-weight: bold; font-size: 3rem;">
@@ -185,7 +194,7 @@
         </div>
         <div style="text-align: center;">
             <div style="display: flex; justify-content: center; padding-top: 4rem; padding-bottom: 3rem;">
-                <a href="https://www.instagram.com/gustinoprianto/" target="_blank">
+                <a href="https://www.instagram.com/gustinoprianto/" target="_blank" class="svg-icon">
                     <div style="padding-left: 3rem; padding-right: 3rem; border-right: 1px solid #c16e70;">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 60px;">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -199,11 +208,11 @@
                                 fill="#c16e70" />
                         </svg>
                         <h1 style="font-size: medium; margin-top: 1rem; color: grey; font-weight: 300;">INSTAGRAM</h1>
-                        <h1 style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">@coffee_kohi
-                        </h1>
+                        <p style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">@coffee_kohi
+                        </p>
                     </div>
                 </a>
-                <a href="mailto:mtgpmn2013@gmail.com">
+                <a href="mailto:mtgpmn2013@gmail.com" class="svg-icon">
                     <div style="padding-left: 2rem; padding-right: 2rem;">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 60px;">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -211,8 +220,8 @@
                                 fill="#c16e70" />
                         </svg>
                         <h1 style="font-size: medium; margin-top: 1rem; color: grey; font-weight: 300;">EMAIL</h1>
-                        <h1 style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">
-                            @coffee_kohi@gmail.com</h1>
+                        <p style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">
+                            @coffee_kohi@gmail.com</p>
                     </div>
                 </a>
             </div>

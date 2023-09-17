@@ -5,7 +5,7 @@
   font-family: Kanit;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -14,7 +14,7 @@ li {
   list-style: none;
 }
 
-table.menu {
+table .menu {
   margin-left: auto;
   margin-right: auto;
   align: center;
@@ -25,6 +25,10 @@ td {
   padding-left: 30px;
   padding-right: 30px;
   vertical-align: top;
+}
+
+button:hover {
+  opacity: 80%;
 }
 
 .navbar {
@@ -55,10 +59,6 @@ td {
   text-align: right;
 }
 
-.navbar .navbar-section .navbar-features .order:hover {
-  opacity: 0.3;
-}
-
 .navbar-text {
   text-decoration: none;
   font-size: x-large;
@@ -66,7 +66,8 @@ td {
   color: white;
 }
 
-a.navbar-text:hover, a.navbar-text:active{
+a.navbar-text:hover,
+a.navbar-text:active {
   color: #c16e70;
 }
 
@@ -99,4 +100,45 @@ p.menu {
   color: grey;
   /* text-align: justify; */
   margin-top: 1rem;
+}
+
+.svg-icon svg:hover,
+.svg-icon p:hover {
+  filter: drop-shadow(0 1px 0px rgb(44, 44, 44));
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 20%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

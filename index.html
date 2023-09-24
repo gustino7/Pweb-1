@@ -1,223 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffe Shop</title>
-    <link rel="icon" type="image/png" href="./img/iconCoffe.png" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-section">
-            <div class="navbar-features">
-                <div style="display: flex; align-items: center">
-                    <img src="./img/logoCoffe.png" alt="logoCoffe" style="width: 8%; display: flex" />
-                    <h1 style="
-                font-size: xx-large;
-                font-weight: bold;
-                margin-left: 25px;
-                color: dimgray;
-              ">
-                        Coffee Kohi
-                    </h1>
-                </div>
+    <div class="bg-primary d-flex flex-row align-items-center">
+        <div class="d-flex flex-row py-lg-4 py-sm-3 mx-auto align-items-center" style="width: 50%;">
+            <div style="width: 3%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" fill="white" class="bi bi-wordpress align-top"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z" />
+                    <path
+                        d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z" />
+                    <path fill-rule="evenodd"
+                        d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z" />
+                </svg>
+            </div>
+            <p class="text-white fw-bold fs-5 ">Our free WordPress themes are downloaded over 5 MILLION times. <span><a
+                        href="#" class="ms-2 text-body-tertiary fs-5 ">Get them now</a></span></p>
 
-                <ul class="navbar-items">
-                    <li><a href="#home" class="navbar-text">Home</a></li>
-                    <li><a href="#menu" class="navbar-text">Menu</a></li>
-                    <li><a href="#about" class="navbar-text">About</a></li>
-                    <li><a href="#contact" class="navbar-text">Contact</a></li>
-                    <button onclick="document.location='https://en.wikipedia.org/wiki/Order'" class="order" style="
-                        margin-left: 50px;
-                        padding: 20px;
-                        padding-left: 30px;
-                        padding-right: 30px;
-                        background-color: #424b54;
-                        border: none;
-                        border-radius: 30px;
-                        overflow: hidden;
-                        ">
-                        <span style="font-size: x-large; font-weight: bolder; color: aliceblue">Order</span>
-                    </button>
+        </div>
+        <div class="d-flex flex-row" style="width: 25%;">
+            <div class="mx-1" style="width: 7%;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="white"
+                        class="bi bi-twitter-x mx-2" viewBox="0 0 16 16">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-1" style="width: 7%;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="white"
+                        class="bi bi-facebook mx-2" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-1" style="width: 7%;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="white"
+                        class="bi bi-instagram mx-2" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-1" style="width: 7%;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="white"
+                        class="bi bi-linkedin mx-2" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-1" style="width: 7%;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="white"
+                        class="bi bi-youtube mx-2" viewBox="0 0 16 16">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mx-1" style="width: 7%;">
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="white"
+                        class="bi bi-github mx-2" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-white py-lg-3 py-sm-3 z-1 sticky-top">
+        <div class="container mx-auto" style="width: 70%;">
+            <a class="navbar-brand" href="#">
+                <h1 class="fs-1">Colorlib.</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-4">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Support</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Free Themes</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Premium Themes</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Website Template</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Blog</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#" style="font-size: larger;">Account</a>
+                    </li>
                 </ul>
-
             </div>
         </div>
     </nav>
-
-    <main>
-        <div class="home-section-page" id="home">
-            <img class="home-section-image" src="./img/bgCoffe1.jpg" alt="bgCoffe" style="width: 100%; opacity: 0.8;" />
-            <div class="home-section-field">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                    style="width: 100px; color: gray; opacity: 0.4;">
-                    <path
-                        d="M6 2.5C5.44772 2.5 5 2.94772 5 3.5V5.5C5 6.05228 5.44772 6.5 6 6.5C6.55228 6.5 7 6.05228 7 5.5V3.5C7 2.94772 6.55228 2.5 6 2.5Z"
-                        fill="currentColor" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M13 21.5C15.973 21.5 18.441 19.3377 18.917 16.5H19C21.2091 16.5 23 14.7091 23 12.5C23 10.2909 21.2091 8.5 19 8.5V7.5H1V15.5C1 18.8137 3.68629 21.5 7 21.5H13ZM3 9.5V15.5C3 17.7091 4.79086 19.5 7 19.5H13C15.2091 19.5 17 17.7091 17 15.5V9.5H3ZM21 12.5C21 13.6046 20.1046 14.5 19 14.5V10.5C20.1046 10.5 21 11.3954 21 12.5Z"
-                        fill="currentColor" />
-                    <path
-                        d="M9 3.5C9 2.94772 9.44771 2.5 10 2.5C10.5523 2.5 11 2.94772 11 3.5V5.5C11 6.05228 10.5523 6.5 10 6.5C9.44771 6.5 9 6.05228 9 5.5V3.5Z"
-                        fill="currentColor" />
-                    <path
-                        d="M14 2.5C13.4477 2.5 13 2.94772 13 3.5V5.5C13 6.05228 13.4477 6.5 14 6.5C14.5523 6.5 15 6.05228 15 5.5V3.5C15 2.94772 14.5523 2.5 14 2.5Z"
-                        fill="currentColor" />
-                </svg>
-                <h1 style="font-size: 3rem">OUR COFFEE</h1>
-                <h1 style="font-size: x-large; margin-top: 1rem">
-                    THE BEST OF SPECIALTY COFFEE FROM INDONESIA
-                </h1>
-                <h1 style="
-              font-size: x-large;
-              margin-top: 20rem;
-              text-align: center;
-              color: darkgray;
-            ">
-                    VARIAN ORIGINAL TERBAIK INDONESIA
-                </h1>
-                <p style="text-align: center; opacity: 0.8; color: darkgray">
-                    Java Mocha, Mount Arjuno Florest, Toraja Kolasi, Java Malabar,
-                    Sumatra Gayo, Bali Kintami
-                </p>
-            </div>
-        </div>
-        <div style="padding: 3rem; padding-bottom: 5rem;" id="menu">
-            <p style="
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-            color: #c16e70;
-            text-align: center;
-            font-size: large;
-            font-weight: bold;
-          ">
-                FROM THE BEST INDONESIAN SPECIALTY COFFEE TO HEART-WARMING FOODS
-            </p>
-            <h1 style="
-            color: rgb(173, 168, 168);
-            text-align: center;
-            font-weight: bold;
-          ">
-                OUR MENU
-            </h1>
-            <div style="margin-top: 1rem; margin-bottom: 3rem;">
-                <hr color="#C16E70" style="width: 100px; height: 5px; margin: auto" />
-            </div>
-            <table class="menu">
-                <tr>
-                    <td align="center"">
-                    <img src=" ./img/coffe-beans.jpg" alt="beans" style="width: 100%" />
-                    </td>
-                    <td align="center">
-                        <img src="./img/coffe-1.jpg" alt="coffe" style="width: 100%" />
-                    </td>
-                    <td align="center">
-                        <img src="./img/non-coffee.jpg" alt="drinks" style="width: 100%" />
-                    </td>
-                    <td align="center">
-                        <img src="./img/food.jpg" alt="food" style="width: 100%" />
-                    </td>
-                </tr>
-                <tr>
-                    <th>
-                        <h2 style="text-align: center; font-size: larger;">Our Beans</h2>
-                    </th>
-                    <th>
-                        <h2 style="text-align: center; font-size: larger;">Coffe Based Drinks</h2>
-                    </th>
-                    <th>
-                        <h2 style="text-align: center; font-size: larger;">Non-Coffee</h2>
-                    </th>
-                    <th>
-                        <h2 style="text-align: center; font-size: larger;">Food & Snack</h2>
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="menu">Biji kopi grade Specialty Arabica dan Fine Robusta dari 6 perkebunan terbaik
-                            Indonesia.</p>
-                    </td>
-                    <td>
-                        <p class="menu">Dari minuman tradisional berbasis espresso sampai
-                            berbagai minuman racikan kopi terkini.</p>
-                    </td>
-                    <td>
-                        <p class="menu">Kami juga memiliki menu non-coffee untuk kamu yang
-                            ingin pilihan lain selain kopi dan untuk anak - anak.</p>
-                    </td>
-                    <td>
-                        <p class="menu">Berbagai macam makanan ringan sampai makanan utama
-                            siap menemani secangkir kopimu.</p>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="about" style="color: rgb(245, 244, 244); padding-top: 5rem; padding-bottom: 5rem;" id="about">
-            <div style="flex: 50%; padding-right: 7rem;">
-                <h1>CERITA KAMI</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget augue
-                    lobortis, varius lorem ac,
-                    fermentum purus. Nullam vitae finibus metus. Suspendisse id dui in nulla laoreet facilisis.
-                    Phasellus
-                    dui lorem, placerat ut nulla ut, pellentesque elementum sapien. Phasellus lacinia sodales ante.
-                    <br><br>
-                    Mauris
-                    nibh erat, imperdiet at odio in, viverra gravida orci. Vivamus ut posuere ligula. Praesent sed leo
-                    purus. Curabitur lobortis tincidunt vulputate. Sed posuere eget velit ut malesuada. Morbi in velit
-                    sit
-                    amet justo tristique aliquet in eget metus. Proin varius magna ut pulvinar egestas. Quisque aliquet,
-                    odio quis tempus consequat, nibh ante blandit lacus, eu blandit neque elit pretium ligula.
-                </p>
-            </div>
-            <div style="flex: 50%;">
-                <img src="./img/coffeShop.png" alt="shop" style="height: 100%; padding-left: 3rem;">
-            </div>
-        </div>
-        <div class="contact" style="padding: auto; background-color: #C16E70; padding-top: 2rem; padding-bottom: 2rem;"
-            id="contact">
-            <p style="text-align: center; font-size: small; color: white;">GET UP CLOSE AND PERSONAL</p>
-            <h1 style="text-align: center; margin-bottom: 1rem; color: white; font-weight: bold; font-size: 3rem;">
-                CONTACT US</h1>
-            <hr color="white" style="width: 100px; height: 10px; margin: auto" />
-        </div>
-        <div style="text-align: center;">
-            <div style="display: flex; justify-content: center; padding-top: 4rem; padding-bottom: 3rem;">
-                <a href="https://www.instagram.com/gustinoprianto/" target="_blank">
-                    <div style="padding-left: 3rem; padding-right: 3rem; border-right: 1px solid #c16e70;">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 60px;">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
-                                fill="#c16e70" />
-                            <path
-                                d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
-                                fill="#c16e70" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
-                                fill="#c16e70" />
-                        </svg>
-                        <h1 style="font-size: medium; margin-top: 1rem; color: grey; font-weight: 300;">INSTAGRAM</h1>
-                        <h1 style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">@coffee_kohi
-                        </h1>
+    <main class="z-0" style="margin-top: 1%;">
+        <div class="bg-body-tertiary">
+            <div class="mx-auto" style="padding: 3rem; width: 65%;">
+                <div>
+                    <h1 class="fs-2 fw-medium">Bootstrap 5</h1>
+                </div>
+                <div>
+                    <p class="fs-5" style="text-align: justify; color: rgb(109, 104, 104);">The most excellent,
+                        easy-to-use, and highly flexible
+                        Bootstrap 5 website templates for any business
+                        or project. You can use them for agencies, companies, startups, travel, lawyers, real estate,
+                        and
+                        the list goes on. These remarkable page canvases follow all the latest trends and regulations of
+                        the
+                        web, ensuring first-class performance at all times. They adapt to mobile and desktop devices and
+                        deliver a great experience on retina screens. With all our best Bootstrap 5 website templates,
+                        you
+                        can save time and energy even though coding knowledge is necessary to activate them. Each tool
+                        is
+                        user-friendly, offering effective execution to beginners and professionals</p>
+                </div>
+                <div class="d-flex flex-row">
+                    <div>
+                        <p><a href="#"
+                                class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home</a>
+                        </p>
                     </div>
-                </a>
-                <a href="mailto:mtgpmn2013@gmail.com">
-                    <div style="padding-left: 2rem; padding-right: 2rem;">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 60px;">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M3.05002 10.0151C2.79178 9.30708 2.94668 8.48233 3.51474 7.91427L9.8787 1.55031C11.0503 0.378738 12.9498 0.378738 14.1213 1.55031L20.4853 7.91427C21.0534 8.48239 21.2083 9.30727 20.9499 10.0154C20.9824 10.1139 20.9999 10.2191 20.9999 10.3285V21.3285C20.9999 22.4331 20.1045 23.3285 18.9999 23.3285H4.99994C3.89537 23.3285 2.99994 22.4331 2.99994 21.3285V10.3285C2.99994 10.219 3.01752 10.1137 3.05002 10.0151ZM4.92896 9.32848L11.2929 2.96452C11.6834 2.574 12.3166 2.574 12.7071 2.96452L19.0711 9.32848H19.0408V9.3588L12.7071 15.6924C12.3166 16.083 11.6834 16.083 11.2929 15.6924L4.92896 9.32848ZM18.9999 12.2281L14.1213 17.1067C12.9498 18.2782 11.0503 18.2782 9.8787 17.1067L4.99994 12.2279L4.99994 21.3285H18.9999V12.2281Z"
-                                fill="#c16e70" />
-                        </svg>
-                        <h1 style="font-size: medium; margin-top: 1rem; color: grey; font-weight: 300;">EMAIL</h1>
-                        <h1 style="font-size: large; margin-top: 5px; color: #C16E70; font-weight: bold;">
-                            @coffee_kohi@gmail.com</h1>
+                    <div>
+                        <p style="color: rgb(109, 104, 104);">>> Bootstrap 5</p>
                     </div>
-                </a>
+                </div>
+            </div>
+        </div>
+        <div class="py-5">
+            <div class="container-fluid mx-auto" style="width: 70%; padding-left: 5%; padding-right: 5%;">
+                <div class="row row-cols-3 align-items-center">
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card1.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card2.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card3.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card4.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card5.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card6.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card7.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                    <div class="my-4 " style="width: 25%; min-width: 10rem; margin-left: 4%; margin-right: 4.3%;">
+                        <img src="img/card8.jpeg" class="card-img-top my-3" alt="card"
+                            style="filter: drop-shadow(3px 5px 10px rgb(44, 44, 44));">
+                        <div class="card-body">
+                            <h3>Judul</h3>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
